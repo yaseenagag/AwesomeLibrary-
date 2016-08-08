@@ -8,19 +8,15 @@
     <script>mocha.setup('bdd')</script>
     <!-- load code you want to test here -->
     <script src="src/underscore.js"></script>
-
-       <script>
-          var clock;
-
-          before(function() {
-            clock = sinon.useFakeTimers();
-          });
-
-          after(function() {
-            clock.restore();
-          });
-        </script>
-
+    <script>
+    var clock;
+    before(function() {
+    clock = sinon.useFakeTimers();
+    });
+    after(function() {
+    clock.restore();
+    });
+    </script>
     <!-- load your test files here -->
     <script src="awesomelibrary-/test/test.js"></script>
     <script>
