@@ -12,16 +12,10 @@ _List of specifications (specs) for the completed goal. These are declarative se
 
 ### Required
 
-- [ ] Pick commonly used methods to rewrite in ES2015.
+- [ ] Write 30 functions from scratch based on the UnderscoreJS library in ES6
 - [ ] Create a ReadMe that describes each method and provides an example of use. 
-- [ ] Publish package to NPM.
 - [ ] Write tests for those methods described.
-
-
-### Optional
-
-
-- [ ] Showcase methods in a simple website app (optional)_.
+- [ ] Have fun!!!
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
