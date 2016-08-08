@@ -17,6 +17,14 @@ each(arr);
 
   //_.MAP
 
+  const map = (array, function) => {
+    for (let i=0; i<arr.length; i++) {
+      const input = [1,2,3];
+      const result = [];
+      result.push(function(input[i]));
+    };
+  }
+
   //_.REDUCE
 
 
