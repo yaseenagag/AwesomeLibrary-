@@ -1,13 +1,13 @@
 var assert = require('assert');
- 	mocha = require('mocha');
- 	chai = require('chai');
- 	expect = require('expect');
+    mocha = require('mocha');
+    chai = require('chai');
+    expect = require('expect');
 
 
-describe('#indexOf()', function(){
-	it('should return the value in the array', function(){
-		assert.equal(1, [1,2,3].indexOf(2));
-	});
+describe('#indexOf()', function() {
+    it('should return the value in the array', function() {
+      assert.equal(1, [1,2,3].indexOf(2));
+    });
 });
 
 describe('array', function(){
@@ -26,3 +26,4 @@ describe('array', function() {
   //implementation
   expect(input).to.equal([1,2,3])
 })
+
