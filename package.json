@@ -1,0 +1,30 @@
+{
+  "name": "awesome_library",
+  "version": "1.0.0",
+  "description": "This is an awesome library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src -d dist",
+    "build:watch": "npm run build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaseenagag/AwesomeLibrary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaseenagag/AwesomeLibrary/issues"
+  },
+  "homepage": "https://github.com/yaseenagag/AwesomeLibrary#readme",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-watch": "^2.0.2"
+  }
+}

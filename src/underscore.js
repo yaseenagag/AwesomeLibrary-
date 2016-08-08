@@ -3,7 +3,7 @@
 
 //_.EACH
 const each = (array) => {
- for (let i = 0; i < arr.length; i++) {
+ for (let i = 0; i < array.length; i++) {
   const arr = [1, 2, 3];
   const newArr = [];
   newArr.push(array[i]);
@@ -11,17 +11,16 @@ const each = (array) => {
 return newArr;
 }
 
-each(arr);
 
 //UNDERSCORE FUNCTIONS FOR OBJECTS
 
-  //_.MAP
+//_.MAP
 
-  const map = (array, function) => {
-    for (let i=0; i<arr.length; i++) {
+  const map = (array, fn) => {
+    for (let i=0; i<array.length; i++) {
       const input = [1,2,3];
       const result = [];
-      result.push(function(input[i]));
+      result.push(fn(input[i]));
     };
   }
 
