@@ -1,112 +1,122 @@
-(function(){
-  'use strict';
+export { map } from './map'
+export { each } from './each'
 
-//_.EACH
-const each = (array) => {
- for (let i = 0; i < array.length; i++) {
-  const arr = [1, 2, 3];
-  const newArr = [];
-  newArr.push(array[i]);
- }
-return newArr;
+const _ = {
+  map,
+  each
 }
 
+export default _
 
-//UNDERSCORE FUNCTIONS FOR OBJECTS
+// (function(){
+//   'use strict';
 
-//_.MAP
-
-  const map = (array, fn) => {
-    for (let i=0; i<array.length; i++) {
-      const input = [1,2,3];
-      const result = [];
-      result.push(fn(input[i]));
-    };
-  }
-
-  //_.REDUCE
-
-
-  //_.FILTER
+// //_.EACH
+// const each = (array) => {
+//  for (let i = 0; i < array.length; i++) {
+//   const arr = [1, 2, 3];
+//   const newArr = [];
+//   newArr.push(array[i]);
+//  }
+// return newArr;
+// }
 
 
-  //_.MAX
+// //UNDERSCORE FUNCTIONS FOR OBJECTS
+
+// //_.MAP
+
+//   const map = (array, fn) => {
+//     for (let i=0; i<array.length; i++) {
+//       const input = [1,2,3];
+//       const result = [];
+//       result.push(fn(input[i]));
+//     };
+//   }
+
+//   //_.REDUCE
 
 
-  //_.MIN
-
-  //_.FINDWHERE
+//   //_.FILTER
 
 
-  //_.EVERY
+//   //_.MAX
 
 
-  //_.PARTITION
+//   //_.MIN
+
+//   //_.FINDWHERE
 
 
-//UNDERSCORE FUNCTIONS FOR ARRAYS
-
-  //_.FIRST
-
-  //_.LAST
+//   //_.EVERY
 
 
-  //_.INITIAL
+//   //_.PARTITION
 
 
-  //_.WITHOUT
+// //UNDERSCORE FUNCTIONS FOR ARRAYS
+
+//   //_.FIRST
+
+//   //_.LAST
 
 
-  //_.UNION
-
-  //_.INTERSECTION
+//   //_.INITIAL
 
 
-  //_.RANGE
+//   //_.WITHOUT
 
 
-  //_.OBJECT
+//   //_.UNION
 
-//UNDERSCORE FUNCTIONS FOR FUNCTIONS
-
-  //_.MEMOIZE
-
-  //_.BIND
+//   //_.INTERSECTION
 
 
-  //_.DELAY
+//   //_.RANGE
 
 
-  //_.DEFER
+//   //_.OBJECT
+
+// //UNDERSCORE FUNCTIONS FOR FUNCTIONS
+
+//   //_.MEMOIZE
+
+//   //_.BIND
 
 
-  //_.DEBOUNCE
-
-  //_.ONCE
+//   //_.DELAY
 
 
-  //_.AFTER
-
-  //_.BEFORE
-
-//UNDERSCORE FUNCTIONS FOR OBJECTS
-
-  //_.KEYS
-
-  //_.VALUES
+//   //_.DEFER
 
 
-  //_.PAIRS
+//   //_.DEBOUNCE
+
+//   //_.ONCE
 
 
-  //_.OMIT
+//   //_.AFTER
+
+//   //_.BEFORE
+
+// //UNDERSCORE FUNCTIONS FOR OBJECTS
+
+//   //_.KEYS
+
+//   //_.VALUES
 
 
-  //_.ISARRAY
+//   //_.PAIRS
+
+
+//   //_.OMIT
+
+
+//   //_.ISARRAY
 
 
 
-  //_.ISSTRING
+//   //_.ISSTRING
 
 
-}());
+// }());
