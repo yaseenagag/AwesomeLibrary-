@@ -1,112 +1,133 @@
 'use strict';
 
-(function () {
-  'use strict';
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  //_.EACH
+var _map = require('./map');
 
-  var each = function each(array) {
-    for (var i = 0; i < array.length; i++) {
-      var arr = [1, 2, 3];
-      var _newArr = [];
-      _newArr.push(array[i]);
-    }
-    return newArr;
-  };
-
-  //UNDERSCORE FUNCTIONS FOR OBJECTS
-
-  //_.MAP
-
-  var map = function map(array, fn) {
-    for (var i = 0; i < array.length; i++) {
-      var input = [1, 2, 3];
-      var result = [];
-      result.push(fn(input[i]));
-    };
-  };
-
-  //_.REDUCE
+Object.defineProperty(exports, 'map', {
+  enumerable: true,
+  get: function get() {
+    return _map.map;
+  }
+});
 
 
-  //_.FILTER
+var _ = {
+  map: map
+};
+
+exports.default = _;
+
+// (function(){
+//   'use strict';
+
+// //_.EACH
+// const each = (array) => {
+//  for (let i = 0; i < array.length; i++) {
+//   const arr = [1, 2, 3];
+//   const newArr = [];
+//   newArr.push(array[i]);
+//  }
+// return newArr;
+// }
 
 
-  //_.MAX
+// //UNDERSCORE FUNCTIONS FOR OBJECTS
+
+// //_.MAP
+
+//   const map = (array, fn) => {
+//     for (let i=0; i<array.length; i++) {
+//       const input = [1,2,3];
+//       const result = [];
+//       result.push(fn(input[i]));
+//     };
+//   }
+
+//   //_.REDUCE
 
 
-  //_.MIN
-
-  //_.FINDWHERE
+//   //_.FILTER
 
 
-  //_.EVERY
+//   //_.MAX
 
 
-  //_.PARTITION
+//   //_.MIN
+
+//   //_.FINDWHERE
 
 
-  //UNDERSCORE FUNCTIONS FOR ARRAYS
-
-  //_.FIRST
-
-  //_.LAST
+//   //_.EVERY
 
 
-  //_.INITIAL
+//   //_.PARTITION
 
 
-  //_.WITHOUT
+// //UNDERSCORE FUNCTIONS FOR ARRAYS
+
+//   //_.FIRST
+
+//   //_.LAST
 
 
-  //_.UNION
-
-  //_.INTERSECTION
+//   //_.INITIAL
 
 
-  //_.RANGE
+//   //_.WITHOUT
 
 
-  //_.OBJECT
+//   //_.UNION
 
-  //UNDERSCORE FUNCTIONS FOR FUNCTIONS
-
-  //_.MEMOIZE
-
-  //_.BIND
+//   //_.INTERSECTION
 
 
-  //_.DELAY
+//   //_.RANGE
 
 
-  //_.DEFER
+//   //_.OBJECT
+
+// //UNDERSCORE FUNCTIONS FOR FUNCTIONS
+
+//   //_.MEMOIZE
+
+//   //_.BIND
 
 
-  //_.DEBOUNCE
-
-  //_.ONCE
+//   //_.DELAY
 
 
-  //_.AFTER
-
-  //_.BEFORE
-
-  //UNDERSCORE FUNCTIONS FOR OBJECTS
-
-  //_.KEYS
-
-  //_.VALUES
+//   //_.DEFER
 
 
-  //_.PAIRS
+//   //_.DEBOUNCE
+
+//   //_.ONCE
 
 
-  //_.OMIT
+//   //_.AFTER
+
+//   //_.BEFORE
+
+// //UNDERSCORE FUNCTIONS FOR OBJECTS
+
+//   //_.KEYS
+
+//   //_.VALUES
 
 
-  //_.ISARRAY
+//   //_.PAIRS
 
 
-  //_.ISSTRING
+//   //_.OMIT
 
-})();
+
+//   //_.ISARRAY
+
+
+//   //_.ISSTRING
+
+
+// }());
