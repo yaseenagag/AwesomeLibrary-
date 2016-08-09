@@ -1,7 +1,9 @@
 export { map } from './map'
+export { each } from './each'
 
 const _ = {
-  map
+  map,
+  each
 }
 
 export default _

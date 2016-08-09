@@ -13,9 +13,19 @@ Object.defineProperty(exports, 'map', {
   }
 });
 
+var _each = require('./each');
+
+Object.defineProperty(exports, 'each', {
+  enumerable: true,
+  get: function get() {
+    return _each.each;
+  }
+});
+
 
 var _ = {
-  map: map
+  map: map,
+  each: each
 };
 
 exports.default = _;
