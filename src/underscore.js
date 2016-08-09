@@ -1,122 +1,39 @@
 export { map } from './map'
 export { each } from './each'
+export { reduce } from './reduce'
+export { filter } from './filter'
+export { max } from './max'
+export { min } from './min'
+export { findWhere } from './findWhere'
+export { partition } from './partition'
+export { first } from './first'
+export { last } from './last'
+export { initial } from './initial'
+export { without } from './without'
+export { union } from './union'
+export { intersection } from './intersection'
+export { range } from './range'
+export { object } from './object'
+export { memoize } from './memoize'
+export { bind } from './bind'
+export { delay } from './delay'
+export { defer } from './defer'
+export { debounce } from './debounce'
+export { once } from './once'
+export { after } from './after'
+export { before } from './before'
+export { keys } from './keys'
+export { values } from './values'
+export { pairs } from './pairs'
+export { omit } from './omit'
+export { isArray } from './isArray'
+export { isString } from './isString'
 
 const _ = {
-  map,
-  each
+  map, each, reduce, filter, max, min, findWhere, partition, first, last,
+  initial, without, union, intersection, range, object, memoize, bind,
+  delay, defer, debounce, once, after, before, keys, values, pairs, omit,
+  isArray, isString
 }
 
 export default _
-
-// (function(){
-//   'use strict';
-
-// //_.EACH
-// const each = (array) => {
-//  for (let i = 0; i < array.length; i++) {
-//   const arr = [1, 2, 3];
-//   const newArr = [];
-//   newArr.push(array[i]);
-//  }
-// return newArr;
-// }
-
-
-// //UNDERSCORE FUNCTIONS FOR OBJECTS
-
-// //_.MAP
-
-//   const map = (array, fn) => {
-//     for (let i=0; i<array.length; i++) {
-//       const input = [1,2,3];
-//       const result = [];
-//       result.push(fn(input[i]));
-//     };
-//   }
-
-//   //_.REDUCE
-
-
-//   //_.FILTER
-
-
-//   //_.MAX
-
-
-//   //_.MIN
-
-//   //_.FINDWHERE
-
-
-//   //_.EVERY
-
-
-//   //_.PARTITION
-
-
-// //UNDERSCORE FUNCTIONS FOR ARRAYS
-
-//   //_.FIRST
-
-//   //_.LAST
-
-
-//   //_.INITIAL
-
-
-//   //_.WITHOUT
-
-
-//   //_.UNION
-
-//   //_.INTERSECTION
-
-
-//   //_.RANGE
-
-
-//   //_.OBJECT
-
-// //UNDERSCORE FUNCTIONS FOR FUNCTIONS
-
-//   //_.MEMOIZE
-
-//   //_.BIND
-
-
-//   //_.DELAY
-
-
-//   //_.DEFER
-
-
-//   //_.DEBOUNCE
-
-//   //_.ONCE
-
-
-//   //_.AFTER
-
-//   //_.BEFORE
-
-// //UNDERSCORE FUNCTIONS FOR OBJECTS
-
-//   //_.KEYS
-
-//   //_.VALUES
-
-
-//   //_.PAIRS
-
-
-//   //_.OMIT
-
-
-//   //_.ISARRAY
-
-
-
-//   //_.ISSTRING
-
-
-// }());

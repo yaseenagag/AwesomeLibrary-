@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var without = function without() {};
 
-exports.reduce = reduce;
+exports.without = without;

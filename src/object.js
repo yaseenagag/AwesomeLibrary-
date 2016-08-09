@@ -1,0 +1,5 @@
+const object = () => {
+
+}
+
+export { object }

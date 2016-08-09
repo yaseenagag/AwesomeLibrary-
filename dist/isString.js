@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var isString = function isString() {};
 
-exports.reduce = reduce;
+exports.isString = isString;

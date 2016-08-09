@@ -1,0 +1,5 @@
+const last = () => {
+
+}
+
+export { last }

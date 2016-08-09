@@ -2,8 +2,8 @@ import mocha from 'mocha'
 import chai from 'chai'
 import expect from 'expect'
 
-import { each } from '../src/each'
+import { debounce } from '../src/debounce'
 
-describe( 'each', () => {
+describe( 'debounce', () => {
 
 })

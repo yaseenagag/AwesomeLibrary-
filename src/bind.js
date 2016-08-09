@@ -1,0 +1,5 @@
+const bind = () => {
+
+}
+
+export { bind }

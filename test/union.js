@@ -2,8 +2,8 @@ import mocha from 'mocha'
 import chai from 'chai'
 import expect from 'expect'
 
-import { each } from '../src/each'
+import { union } from '../src/union'
 
-describe( 'each', () => {
+describe( 'union', () => {
 
 })

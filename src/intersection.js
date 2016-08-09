@@ -1,0 +1,5 @@
+const intersection = () => {
+
+}
+
+export { intersection }

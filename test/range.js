@@ -2,8 +2,8 @@ import mocha from 'mocha'
 import chai from 'chai'
 import expect from 'expect'
 
-import { each } from '../src/each'
+import { range } from '../src/range'
 
-describe( 'each', () => {
+describe( 'range', () => {
 
 })
