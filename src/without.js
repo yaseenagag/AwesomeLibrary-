@@ -1,0 +1,5 @@
+const without = () => {
+
+}
+
+export { without }

@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var every = function every() {};
 
-exports.reduce = reduce;
+exports.every = every;

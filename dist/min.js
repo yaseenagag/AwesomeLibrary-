@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var min = function min() {};
 
-exports.reduce = reduce;
+exports.min = min;

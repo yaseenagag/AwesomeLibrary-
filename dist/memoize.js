@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var memoize = function memoize() {};
 
-exports.reduce = reduce;
+exports.memoize = memoize;

@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var partition = function partition() {};
 
-exports.reduce = reduce;
+exports.partition = partition;

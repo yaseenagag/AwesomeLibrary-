@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var defer = function defer() {};
 
-exports.reduce = reduce;
+exports.defer = defer;

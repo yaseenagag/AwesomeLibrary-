@@ -2,8 +2,8 @@ import mocha from 'mocha'
 import chai from 'chai'
 import expect from 'expect'
 
-import { each } from '../src/each'
+import { findWhere } from '../src/findWhere'
 
-describe( 'each', () => {
+describe( 'findWhere', () => {
 
 })

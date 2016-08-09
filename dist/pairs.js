@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var pairs = function pairs() {};
 
-exports.reduce = reduce;
+exports.pairs = pairs;

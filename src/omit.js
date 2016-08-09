@@ -1,0 +1,5 @@
+const omit = () => {
+
+}
+
+export { omit }

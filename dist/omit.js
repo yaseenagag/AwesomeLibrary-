@@ -3,6 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce() {};
+var omit = function omit() {};
 
-exports.reduce = reduce;
+exports.omit = omit;
