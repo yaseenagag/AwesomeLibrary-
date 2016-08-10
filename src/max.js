@@ -1,10 +1,12 @@
-const myArray = [1, 34, 23, 12, 6, 3];
-
-let max = myArray[0];
-
-
-for (let index = 0; index < myArray.length; index++) {
-  if (myArray[index] > max) {
-    max = myArray[index];}
+const max = ( array, iteratee ) => {
+  let maxVal = array[0];
+   for( let el of array ) {
+    if (array[el] > maxVal) {
+    maxVal = array[el];
+    }
+   }
+return maxVal
 }
+
+
 export { max }

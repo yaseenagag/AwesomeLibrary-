@@ -3,13 +3,36 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var myArray = [1, 34, 23, 12, 6, 3];
+var max = function max(array, iteratee) {
+  var maxVal = array[0];
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
 
-var max = myArray[0];
+  try {
+    for (var _iterator = array[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var el = _step.value;
 
-for (var index = 0; index < myArray.length; index++) {
-  if (myArray[index] > max) {
-    exports.max = max = myArray[index];
+      if (array[el] > maxVal) {
+        maxVal = array[el];
+      }
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
   }
-}
+
+  return maxVal;
+};
+
 exports.max = max;
