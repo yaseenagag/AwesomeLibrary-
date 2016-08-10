@@ -3,14 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var max = function max(collection, iteratee) {
-  for (var key in collection) {
-    var maxVal = [];
-    if (collection[key] > maxVal) {
-      maxVal = collection[key];
-      collection.push(maxVal);
-    }
-    return maxVal;
+var myArray = [1, 34, 23, 12, 6, 3];
+
+var max = myArray[0];
+
+for (var index = 0; index < myArray.length; index++) {
+  if (myArray[index] > max) {
+    exports.max = max = myArray[index];
   }
-};
+}
 exports.max = max;
