@@ -1,10 +1,11 @@
-const max = ( array, iteratee ) => {
-  let maxVal = array[0];
-   for( let el of array ) {
-    if (array[el] > maxVal) {
-    maxVal = array[el];
-    }
+
+const max = ( collection, iteratee ) => {
+  let maxVal = collection[0];
+   for( let key in collection ) {
+    if (collection[key] > maxVal) {
+      maxVal = collection[key];
    }
+ }
 return maxVal
 
 }
