@@ -6,4 +6,10 @@ import { last } from '../src/last'
 
 describe( 'last', () => {
 
+    it( 'returns last value in the list', () => {
+      const input = [1,2,3]
+
+      expect( last(input, 2 )).toEqual( [2, 3] )
+    });
+
 })
