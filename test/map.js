@@ -44,11 +44,20 @@ describe('map2', () => {
     expect( map( undefined, identity)).toEqual( [] )
   })
 
-})
-
   // iteratee/transform can accept value and index
+  it( 'returns an array with the value when the input is at that index', () => {
+    const input = [ 1, 2, 3 ]
+    expect( map( input, a => input[1] ) )
+  })
 
   // iteratee/transform can accept value and index and collection
+
+
+})
+
+
+
+
 
 
 
