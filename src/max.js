@@ -6,6 +6,7 @@ const max = ( array, iteratee ) => {
     }
    }
 return maxVal
+
 }
 
 
