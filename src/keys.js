@@ -1,11 +1,8 @@
-const keys = () => {
-  // if( Object === null ) {
-  //  return null
-  // } else( Object === undefined ) {
-  //  return undefined
-  // } else {
-   return Object.keys()
-  }
+const keys = object => {
+  const target = object || {}
+
+  return Object.keys( target )
+}
 
 
 export { keys }

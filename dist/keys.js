@@ -3,13 +3,10 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var keys = function keys() {
-  // if( Object === null ) {
-  //  return null
-  // } else( Object === undefined ) {
-  //  return undefined
-  // } else {
-  return Object.keys();
+var keys = function keys(object) {
+  var target = object || {};
+
+  return Object.keys(target);
 };
 
 exports.keys = keys;
