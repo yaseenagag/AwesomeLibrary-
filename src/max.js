@@ -4,10 +4,10 @@ const max = ( collection, iteratee ) => {
    for( let key in collection ) {
     if (collection[key] > maxVal) {
       maxVal = collection[key];
+    }
    }
- }
-return maxVal
 
+ return maxVal
 }
 
 

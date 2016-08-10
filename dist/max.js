@@ -11,6 +11,7 @@ var max = function max(collection, iteratee) {
       maxVal = collection[key];
     }
   }
+
   return maxVal;
 };
 

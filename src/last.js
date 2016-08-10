@@ -1,12 +1,11 @@
-const last = ( collection, iteratee ) => {
-   for( let key in collection ) {
-    let lastVal = [];
-    if (collection[key] > lastVal) {
-      lastVal = collection[key];
-   }
-return lastVal
- }
-}
+const lastValues = [];
 
+const last = function (array, n) {
+  while (n > 0) {
+   n--
+   lastValues.unshift(array.pop());
+  }
+return lastValues;
+}
 
 export { last }
