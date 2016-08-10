@@ -1,14 +1,13 @@
 const every = (list, predicate) => {
-  let status = true
-  for (let index = 0; index < list.length; index++){
-    if( predicate(list[index])){
-      return true
-    }
-    if( predicate(list[index])){
+  const target = list || []
+
+  for( let index = 0; index < target.length; index++ ) {
+    if( ! predicate( target[ index ] ) ){
       return false
     }
   }
+
+  return true
 }
 
 export { every }
-
