@@ -1,4 +1,3 @@
-
 const min = ( collection, iteratee ) => {
   let minVal = collection[0];
    for( let key in collection ) {
