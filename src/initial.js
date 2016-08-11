@@ -1,11 +1,15 @@
-const initial = (array, n) => {
-//   while (n > 0) {
-//    n--
-//    initialValues.unshift(array.pop());
-//   }
-// return initialValues;
+const initial = (array, n=1) => {
+  if( !( array instanceof Array || typeof( array ) === 'string' ) ) {
+    return []
+  }
 
-  return array.slice( Math.max(array.length - n, n))
+  let result = []
+
+  for( let index = 0; index < array.length - n; index++ ) {
+    result.push( array[ index ])
+  }
+
+  return result
 }
 
 export { initial }
