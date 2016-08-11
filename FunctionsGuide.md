@@ -135,3 +135,10 @@ Functions:
         return _.isNumber(value);
       });
       => {name: 'moe', userid: 'moe1'}
+
+20. rest
+      _.rest(array, [index]) Aliases: tail, drop 
+      Returns the rest of the elements in an array. Pass an index to return the values of the array from that index onward.
+      
+      _.rest([5, 4, 3, 2, 1]);
+      => [4, 3, 2, 1]
