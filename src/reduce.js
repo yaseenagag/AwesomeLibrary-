@@ -6,7 +6,7 @@ const reduce = (input, iteratee, memo) => {
   let result = memo
 
   for( let key in input ) {
-    if( result ) {
+    if( result || result === '' ) {
       result = iteratee( result, input[ key ], key, input )
     } else {
       result = input[ key ]
