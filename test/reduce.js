@@ -33,7 +33,7 @@ describe( 'reduce', () => {
     // list[1]: 2
     // return '-1-0-1-1-0-1-2-1-2'
 
-    expect( reduce( [1,2], test, '' )).toEqual( '-1-0-1-1-0-1-2-1-2' )
+    expect( reduce( [1,2], test )).toEqual( '-1-0-1-1-0-1-2-1-2' )
   })
 
   it( 'invokes iteratee with memo, value, key, object if object', () => {
