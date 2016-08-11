@@ -124,3 +124,14 @@ Functions:
       
       _.values({one: 1, two: 2, three: 3});
       => [1, 2, 3]
+
+19. omit
+      .omit(object, *keys) 
+      Return a copy of the object, filtered to omit the blacklisted keys (or array of keys). Alternatively accepts a predicate indicating which keys to omit.
+      
+      _.omit({name: 'moe', age: 50, userid: 'moe1'}, 'userid');
+      => {name: 'moe', age: 50}
+      _.omit({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
+        return _.isNumber(value);
+      });
+      => {name: 'moe', userid: 'moe1'}
