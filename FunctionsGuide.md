@@ -118,3 +118,9 @@ Functions:
       var fibonacci = _.memoize(function(n) {
         return n < 2 ? n: fibonacci(n - 1) + fibonacci(n - 2);
       });
+18. values
+      _.values(object) 
+      Return all of the values of the object's own properties.
+      
+      _.values({one: 1, two: 2, three: 3});
+      => [1, 2, 3]
