@@ -12,11 +12,11 @@ _List of specifications (specs) for the completed goal. These are declarative se
 
 ### Required
 
-- [ ] Write 30 functions from scratch based on the UnderscoreJS library in ES6
-- [ ] Create a ReadMe that describes each method and provides an example of use. 
-- [ ] Write tests for those methods described.
-- [ ] Have fun!!!
-- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
+- [x] Write 30 functions from scratch based on the UnderscoreJS library in ES6
+- [x] Create a ReadMe that describes each method and provides an example of use. 
+- [x] Write tests for those methods described.
+- [x] Have fun!!!
+- [x] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
 ---
 
