@@ -21,6 +21,7 @@ Include the following script into your package.json file
     "test": "mocha --recursive --watch --require babel-register "
   },```
 
+Run the tests
 
 
 
