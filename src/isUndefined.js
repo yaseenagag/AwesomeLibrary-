@@ -1,5 +1,4 @@
-const isUndefined = ( array, index=1 ) => {
+const isUndefined = input => input  === undefined
 
-}
 
 export { isUndefined }
