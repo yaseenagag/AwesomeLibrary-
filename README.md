@@ -37,7 +37,7 @@ Include the following script into your package.json file
     "test": "mocha --recursive --watch --require babel-register "
   },```
 
-In your terminal's command line you run babel watch 
+In your terminal's command line run babel watch 
 
 ```npm run build:watch```
 
