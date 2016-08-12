@@ -7,7 +7,7 @@ import { memoize } from '../src/memoize'
 const fibbonaci = n =>
   n < 2 ? n : fibbonaci( n - 1 ) + fibbonaci( n - 2 )
 
-describe.only( 'memoize', () => {
+describe( 'memoize', () => {
   it( 'returns the result of the function', () => {
     const memoFib = memoize( fibbonaci )
 
