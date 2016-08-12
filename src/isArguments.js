@@ -1,5 +1,3 @@
-const isArguments = ( array, index=1 ) => {
-
-}
+const isArguments = fn => typeof( fn ) === 'function'
 
 export { isArguments }
