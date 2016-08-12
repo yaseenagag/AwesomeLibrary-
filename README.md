@@ -19,7 +19,7 @@ Install babel-cli
   
 Install ES2015
 
-```npm install --save babel-cli babel-preset-es2015```
+```npm install --save babel-preset-es2015```
 
 Install babel-register
 
