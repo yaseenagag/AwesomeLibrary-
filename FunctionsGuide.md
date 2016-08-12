@@ -15,7 +15,7 @@ Functions based off of underscorejs.org:
       _.max(stooges, function(stooge){ return stooge.age; });
       => {name: 'curly', age: 60}; </br>
 3. map </br>
-      Parameters => (list, iteratee, [context]) Alias: collect 
+      Parameters => (list, iteratee, [context]) Aka: collect 
       Produces a new array of values by mapping each value in list through a transformation function (iteratee). The iteratee is passed three arguments: the value, then the index (or key) of the iteration, and finally a reference to the entire list.</br>
       Example:
       _.map([1, 2, 3], function(num){ return num * 3; });
@@ -59,7 +59,7 @@ Functions based off of underscorejs.org:
       _.keys({one: 1, two: 2, three: 3});
       => ["one", "two", "three"] </br>
 9. every </br> 
-      Parameters => (list, [predicate], [context]) Alias: all 
+      Parameters => (list, [predicate], [context]) Aka: all 
       Returns true if all of the values in the list pass the predicate truth test. Short-circuits and stops traversing the list if a false element is found.</br>
       Example: 
       _.every([2, 4, 5], function(num) { return num % 2 == 0; });
@@ -199,7 +199,7 @@ Functions based off of underscorejs.org:
       => true
 
 28.   find </br>
-      Parameters => (list, predicate, [context]) Alias: detect 
+      Parameters => (list, predicate, [context]) Aka: detect 
       Looks through each value in the list, returning the first one that passes a truth test (predicate), or undefined if no value passes the test. The function returns as soon as it finds an acceptable element, and doesn't traverse the entire list.</br>
       Example:
       var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
@@ -216,6 +216,6 @@ Functions based off of underscorejs.org:
 30.   some </br>
       Parameters => (list, [predicate], [context]) Aka: any 
       Returns true if any of the values in the list pass the predicate truth test. Short-circuits and stops traversing the list if a true element is found. </br>
-      
+      Example:
       _.some([null, 0, 'yes', false]);
       => true
