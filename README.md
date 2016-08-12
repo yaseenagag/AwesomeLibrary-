@@ -1,14 +1,29 @@
 # AwesomeLibrary-JavaScript Library 
 ## Getting Started
 
-Install babel-register
-```npm install babel-register```
+Clone the file into your local 
+```git clone git@github.com:yaseenagag/AwesomeLibrary-.git```
 
-Install ES2015
-```npm install babel-cli babel-preset-es2015``
+Install mocha, chai, should
+```npm install --save mocha chai chai-as-promised should``
 
-Install Should
-```npm install should``
+Install babel
+```npm install --save-dev babel-core
+```npm i --save-dev babel-cli```
+```npm install --save babel-cli babel-preset-es2015```
+```npm install --save babel-register```
+```npm install --save-dev babel-watch```
+
+Include the following script into your package.json file
+```"scripts": {
+    "build": "babel src -d dist",
+    "build:watch": "npm run build -- --watch",
+    "test": "mocha --recursive --watch --require babel-register "
+  },```
+
+
+
+
 
 Start Running Your Tests. Enjoy!
 ```npm run test```
