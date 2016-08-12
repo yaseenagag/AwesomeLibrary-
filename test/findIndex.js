@@ -5,9 +5,30 @@ import expect from 'expect'
 import { findIndex } from '../src/findIndex'
 
 describe( 'findIndex', () => {
-  it( 'return true if all the values pass the predicate test', () => {
-    const input = [2, 4, 6, 8]
 
-    expect( findIndex(input, a => a % 2 == 0 )).toEqual(true)
+  it( 'returns -1 when no values pass the truth test', () => {
+  	const isPrime = (number) => {
+  		let start = 2;
+  		while(start <= Math.sqrt(number)) {
+  			if (number % start++ < 1) return false
+  		}
+  		return number > 1
+  	}
+    const input = [4, 6, 8, 12]
+
+    expect( findIndex(input, isPrime )).toEqual(-1)
   })
+
+
+//   it( 'returns -1 when the value is not present', () => {
+
+//     expect( findIndex([4,6,8,12], fn(number){
+//     		let start = 2
+//     		while (start <= Math.sqrt(number)) {
+//     			if (number % start++ < 1) return false
+//     		}
+//     	return number > 1
+//     	})
+
+//   } ).toEqual(-1)
 })
