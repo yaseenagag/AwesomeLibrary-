@@ -1,5 +1,0 @@
-const before = () => {
-
-}
-
-export { before }

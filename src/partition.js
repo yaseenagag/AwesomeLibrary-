@@ -1,5 +1,0 @@
-const partition = () => {
-
-}
-
-export { partition }

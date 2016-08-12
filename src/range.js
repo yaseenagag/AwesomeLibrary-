@@ -1,5 +1,0 @@
-const range = () => {
-
-}
-
-export { range }

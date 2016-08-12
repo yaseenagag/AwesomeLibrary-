@@ -1,5 +1,0 @@
-const object = () => {
-
-}
-
-export { object }

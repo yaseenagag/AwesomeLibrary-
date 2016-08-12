@@ -1,5 +1,0 @@
-const defer = () => {
-
-}
-
-export { defer }

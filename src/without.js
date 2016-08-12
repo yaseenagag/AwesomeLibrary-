@@ -1,5 +1,0 @@
-const without = () => {
-
-}
-
-export { without }

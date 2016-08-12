@@ -1,5 +1,0 @@
-const bind = () => {
-
-}
-
-export { bind }
