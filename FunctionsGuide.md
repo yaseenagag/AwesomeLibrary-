@@ -1,166 +1,184 @@
 Functions based off of underscorejs.org:
 
 1. min </br>
-      min_.min(list, [iteratee], [context]) 
+      Paramaters => (list, [iteratee], [context]) 
       Returns the minimum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. Infinity is returned if list is empty, so an isEmpty guard may be required. Non-numerical values in list will be ignored.
-      
+      Example:
       var numbers = [10, 5, 100, 2, 1000];
       _.min(numbers);
-      => 2
+      => 2 </br>
 2. max </br> 
-      _.max(list, [iteratee], [context]) 
+      Paramaters => (list, [iteratee], [context]) 
       Returns the maximum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. -Infinity is returned if list is empty, so an isEmpty guard may be required. Non-numerical values in list will be ignored.
-      
+      Example:
       var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
       _.max(stooges, function(stooge){ return stooge.age; });
-      => {name: 'curly', age: 60};
+      => {name: 'curly', age: 60}; </br>
 3. map </br>
-      _.map(list, iteratee, [context]) Alias: collect 
+      Parameters => (list, iteratee, [context]) Alias: collect 
       Produces a new array of values by mapping each value in list through a transformation function (iteratee). The iteratee is passed three arguments: the value, then the index (or key) of the iteration, and finally a reference to the entire list.
-      
+      Example:
       _.map([1, 2, 3], function(num){ return num * 3; });
       => [3, 6, 9]
       _.map({one: 1, two: 2, three: 3}, function(num, key){ return num * 3; });
       => [3, 6, 9]
       _.map([[1, 2], [3, 4]], _.first);
-      => [1, 3]
+      => [1, 3] </br>
 
 4. each </br> 
-      _.each(list, iteratee, [context]) Alias: forEach 
+      Paramaters => (list, iteratee, [context]) aka forEach 
       Iterates over a list of elements, yielding each in turn to an iteratee function. The iteratee is bound to the context object, if one is passed. Each invocation of iteratee is called with three arguments: (element, index, list). If list is a JavaScript object, iteratee's arguments will be (value, key, list). Returns the list for chaining.
-      
+      Example
       _.each([1, 2, 3], alert);
       => alerts each number in turn...
       _.each({one: 1, two: 2, three: 3}, alert);
-      => alerts each number value in turn...
+      => alerts each number value in turn... </br>
 
 5. first </br>
-      _.first(array, [n]) Aliases: head, take 
+      Parameters => (array, [n]) Aka: head, take 
       Returns the first element of an array. Passing n will return the first n elements of the array.
-      
+      Example:
       _.first([5, 4, 3, 2, 1]);
-      => 5
+      => 5 </br>
 6. last </br>
-      _.last(array, [n]) 
+      Parameters => (array, [n]) 
       Returns the last element of an array. Passing n will return the last n elements of the array.
-      
+      Example:
       _.last([5, 4, 3, 2, 1]);
-      => 1
+      => 1 </br>
 7. filter </br>
-      _.filter(list, predicate, [context]) Alias: select 
+      Parameters => (list, predicate, [context]) Aka: select 
       Looks through each value in the list, returning an array of all the values that pass a truth test (predicate).
-      
+      Example:
       var evens = _.filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
-      => [2, 4, 6]
+      => [2, 4, 6] </br>
 8. keys </br>
-      _.keys(object) 
+      Parameters => (object) 
       Retrieve all the names of the object's own enumerable properties.
-      
+      Example:
       _.keys({one: 1, two: 2, three: 3});
-      => ["one", "two", "three"]
+      => ["one", "two", "three"] </br>
 9. every </br> 
-      _.every(list, [predicate], [context]) Alias: all 
+      Parameters => (list, [predicate], [context]) Alias: all 
       Returns true if all of the values in the list pass the predicate truth test. Short-circuits and stops traversing the list if a false element is found.
-      
+      Example: 
       _.every([2, 4, 5], function(num) { return num % 2 == 0; });
-      => false
+      => false </br>
 10. initial </br> 
-      _.initial(array, [n]) 
+      Parameters => (array, [n]) 
       Returns everything but the last entry of the array. Especially useful on the arguments object. Pass n to exclude the last n elements from the result.
-      
+      Example: 
       _.initial([5, 4, 3, 2, 1]);
-      => [5, 4, 3, 2]
+      => [5, 4, 3, 2] </br>
 11. reduce </br>
-      _.reduce(list, iteratee, [memo], [context]) Aliases: inject, foldl 
+      Parameters => (list, iteratee, [memo], [context]) Aka: inject, foldl 
       Also known as inject and foldl, reduce boils down a list of values into a single value. Memo is the initial state of the reduction, and each successive step of it should be returned by iteratee. The iteratee is passed four arguments: the memo, then the value and index (or key) of the iteration, and finally a reference to the entire list.
       
       If no memo is passed to the initial invocation of reduce, the iteratee is not invoked on the first element of the list. The first element is instead passed as the memo in the invocation of the iteratee on the next element in the list.
-      
+      Example:
       var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
-      => 6
+      => 6 </br>
 12. isNumber </br>
       Returns true if object is a Number (including NaN).
-
+      Example: 
       _.isNumber(8.4 * 5);
-      => true
+      => true </br>
 13. isFunction </br>
-      _.isFunction(object) 
+      Parameters => (object) 
       Returns true if object is a Function.
-
+      Example:
       _.isFunction(alert);
-      => true
+      => true </br>
 14. isString </br>
-      _.isString(object) 
+      Parameters => (object) 
       Returns true if object is a String.
-      
+      Example:
       _.isString("moe");
-      => true
+      => true </br>
 15. isArray </br>
-      _.isArray(object) 
+      Parameters => (object) 
       Returns true if object is an Array.
-      
+      Example:
       (function(){ return _.isArray(arguments); })();
       => false
       _.isArray([1,2,3]);
-      => true
+      => true </br>
 16. isNull </br>
-      _.isNull(object) 
+      Parameters => (object) 
       Returns true if the value of object is null.
-      
+      Example:
       _.isNull(null);
       => true
       _.isNull(undefined);
-      => false
+      => false </br>
 17. memoize </br> 
-      _.memoize(function, [hashFunction]) 
+      Parameters => (function, [hashFunction]) 
       Memoizes a given function by caching the computed result. Useful for speeding up slow-running computations. If passed an optional hashFunction, it will be used to compute the hash key for storing the result, based on the arguments to the original function. The default hashFunction just uses the first argument to the memoized function as the key. The cache of memoized values is available as the cache property on the returned function.
-      
+      Example:
       var fibonacci = _.memoize(function(n) {
         return n < 2 ? n: fibonacci(n - 1) + fibonacci(n - 2);
-      });
+      }); </br>
 18. values </br>
-      _.values(object) 
+      Parameters => (object) 
       Return all of the values of the object's own properties.
-      
+      Example:
       _.values({one: 1, two: 2, three: 3});
-      => [1, 2, 3]
+      => [1, 2, 3] </br>
 
 19. omit </br>
-      .omit(object, *keys) 
+      Parameters => (object, *keys) 
       Return a copy of the object, filtered to omit the blacklisted keys (or array of keys). Alternatively accepts a predicate indicating which keys to omit.
-      
+      Example: 
       _.omit({name: 'moe', age: 50, userid: 'moe1'}, 'userid');
       => {name: 'moe', age: 50}
       _.omit({name: 'moe', age: 50, userid: 'moe1'}, function(value, key, object) {
         return _.isNumber(value);
       });
-      => {name: 'moe', userid: 'moe1'}
+      => {name: 'moe', userid: 'moe1'} </br>
 
 20. rest </br>
-      _.rest(array, [index]) Aliases: tail, drop 
+      Parameters (array, [index]) Aka: tail, drop 
       Returns the rest of the elements in an array. Pass an index to return the values of the array from that index onward.
-      
+      Example:
       _.rest([5, 4, 3, 2, 1]);
-      => [4, 3, 2, 1]
+      => [4, 3, 2, 1] </br>
 
 21. size </br>
+      Parameters => (object)
+      Returns the size of the object. Pass an object to return the size. 
+      Example:
       _.size({one: 1, two: 2, three: 3});
       size_.size(list)  Return the number of values in the list.
-      => 3
+      => 3 </br>
 
 22. isUndefined </br>
-      _.isUndefined(value) 
-      Returns true if value is undefined.
-      
+      Parameters => (value) 
+      Returns true if value is undefined.</br>
+      Example: 
       _.isUndefined(window.missingVariable);
-      => true
+      => true </br>
 
 23. isArguments </br>
-       _.isArguments(object) 
-      Returns true if object is an Arguments object.
-      
+      Parameters => (object) 
+      Returns true if object is an Arguments object. </br>
+      Example: 
       (function(){ return _.isArguments(arguments); })(1, 2, 3);
       => true
       _.isArguments([1,2,3]);
-      => false
+      => false </br>
+
+24. isBoolean </br>
+      Parameters => (object)
+      Returns true if object is either true or false. </br>
+      Example:
+      _.isBoolean(null);
+      => false </br> 
+25.  initial </br> 
+      Parameters => (array, [n]) 
+      Returns everything but the last entry of the array. Especially useful on the arguments object. Pass n to exclude the last n elements from the result.
+      Example: 
+      _.initial([5, 4, 3, 2, 1]);
+      => [5, 4, 3, 2] </br>
+
+
 
