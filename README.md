@@ -14,15 +14,19 @@ Install babel
 ```npm install --save-dev babel-core```
 
 Install babel-cli 
+
 ```npm install --save-dev babel-cli```
   
 Install ES2015
+
 ```npm install --save babel-cli babel-preset-es2015```
 
 Install babel-register
+
 ```npm install --save babel-register```
 
 Install babel-watch
+
 ```npm install --save-dev babel-watch```
 
 Include the following script into your package.json file
