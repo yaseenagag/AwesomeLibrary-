@@ -142,3 +142,8 @@ Functions:
       
       _.rest([5, 4, 3, 2, 1]);
       => [4, 3, 2, 1]
+
+21. size
+      _.size({one: 1, two: 2, three: 3});
+      size_.size(list)  Return the number of values in the list.
+      => 3
