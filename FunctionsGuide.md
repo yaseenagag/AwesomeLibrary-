@@ -213,3 +213,9 @@ Functions based off of underscorejs.org:
       => -1 // not found
       _.findIndex([4, 6, 7, 12], isPrime);
       => 2
+30.   some </br>
+      Parameters => (list, [predicate], [context]) Aka: any 
+      Returns true if any of the values in the list pass the predicate truth test. Short-circuits and stops traversing the list if a true element is found. </br>
+      
+      _.some([null, 0, 'yes', false]);
+      => true
