@@ -7,14 +7,14 @@ Functions based off of underscorejs.org:
       var numbers = [10, 5, 100, 2, 1000];
       _.min(numbers);
       => 2
-2. max 
+2. max </br> 
       _.max(list, [iteratee], [context]) 
       Returns the maximum value in list. If an iteratee function is provided, it will be used on each value to generate the criterion by which the value is ranked. -Infinity is returned if list is empty, so an isEmpty guard may be required. Non-numerical values in list will be ignored.
       
       var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
       _.max(stooges, function(stooge){ return stooge.age; });
       => {name: 'curly', age: 60};
-3. map
+3. map </br>
       _.map(list, iteratee, [context]) Alias: collect 
       Produces a new array of values by mapping each value in list through a transformation function (iteratee). The iteratee is passed three arguments: the value, then the index (or key) of the iteration, and finally a reference to the entire list.
       
@@ -25,7 +25,7 @@ Functions based off of underscorejs.org:
       _.map([[1, 2], [3, 4]], _.first);
       => [1, 3]
 
-4. each 
+4. each </br> 
       _.each(list, iteratee, [context]) Alias: forEach 
       Iterates over a list of elements, yielding each in turn to an iteratee function. The iteratee is bound to the context object, if one is passed. Each invocation of iteratee is called with three arguments: (element, index, list). If list is a JavaScript object, iteratee's arguments will be (value, key, list). Returns the list for chaining.
       
@@ -34,43 +34,43 @@ Functions based off of underscorejs.org:
       _.each({one: 1, two: 2, three: 3}, alert);
       => alerts each number value in turn...
 
-5. first
+5. first </br>
       _.first(array, [n]) Aliases: head, take 
       Returns the first element of an array. Passing n will return the first n elements of the array.
       
       _.first([5, 4, 3, 2, 1]);
       => 5
-6. last
+6. last </br>
       _.last(array, [n]) 
       Returns the last element of an array. Passing n will return the last n elements of the array.
       
       _.last([5, 4, 3, 2, 1]);
       => 1
-7. filter
+7. filter </br>
       _.filter(list, predicate, [context]) Alias: select 
       Looks through each value in the list, returning an array of all the values that pass a truth test (predicate).
       
       var evens = _.filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
       => [2, 4, 6]
-8. keys 
+8. keys </br>
       _.keys(object) 
       Retrieve all the names of the object's own enumerable properties.
       
       _.keys({one: 1, two: 2, three: 3});
       => ["one", "two", "three"]
-9. every 
+9. every </br> 
       _.every(list, [predicate], [context]) Alias: all 
       Returns true if all of the values in the list pass the predicate truth test. Short-circuits and stops traversing the list if a false element is found.
       
       _.every([2, 4, 5], function(num) { return num % 2 == 0; });
       => false
-10. initial 
+10. initial </br> 
       _.initial(array, [n]) 
       Returns everything but the last entry of the array. Especially useful on the arguments object. Pass n to exclude the last n elements from the result.
       
       _.initial([5, 4, 3, 2, 1]);
       => [5, 4, 3, 2]
-11. reduce
+11. reduce </br>
       _.reduce(list, iteratee, [memo], [context]) Aliases: inject, foldl 
       Also known as inject and foldl, reduce boils down a list of values into a single value. Memo is the initial state of the reduction, and each successive step of it should be returned by iteratee. The iteratee is passed four arguments: the memo, then the value and index (or key) of the iteration, and finally a reference to the entire list.
       
@@ -78,24 +78,24 @@ Functions based off of underscorejs.org:
       
       var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 0);
       => 6
-12. isNumber
+12. isNumber </br>
       Returns true if object is a Number (including NaN).
 
       _.isNumber(8.4 * 5);
       => true
-13. isFunction 
+13. isFunction </br>
       _.isFunction(object) 
       Returns true if object is a Function.
 
       _.isFunction(alert);
       => true
-14. isString
+14. isString </br>
       _.isString(object) 
       Returns true if object is a String.
       
       _.isString("moe");
       => true
-15. isArray
+15. isArray </br>
       _.isArray(object) 
       Returns true if object is an Array.
       
@@ -103,7 +103,7 @@ Functions based off of underscorejs.org:
       => false
       _.isArray([1,2,3]);
       => true
-16. isNull
+16. isNull </br>
       _.isNull(object) 
       Returns true if the value of object is null.
       
@@ -111,21 +111,21 @@ Functions based off of underscorejs.org:
       => true
       _.isNull(undefined);
       => false
-17. memoize 
+17. memoize </br> 
       _.memoize(function, [hashFunction]) 
       Memoizes a given function by caching the computed result. Useful for speeding up slow-running computations. If passed an optional hashFunction, it will be used to compute the hash key for storing the result, based on the arguments to the original function. The default hashFunction just uses the first argument to the memoized function as the key. The cache of memoized values is available as the cache property on the returned function.
       
       var fibonacci = _.memoize(function(n) {
         return n < 2 ? n: fibonacci(n - 1) + fibonacci(n - 2);
       });
-18. values
+18. values </br>
       _.values(object) 
       Return all of the values of the object's own properties.
       
       _.values({one: 1, two: 2, three: 3});
       => [1, 2, 3]
 
-19. omit
+19. omit </br>
       .omit(object, *keys) 
       Return a copy of the object, filtered to omit the blacklisted keys (or array of keys). Alternatively accepts a predicate indicating which keys to omit.
       
@@ -136,26 +136,26 @@ Functions based off of underscorejs.org:
       });
       => {name: 'moe', userid: 'moe1'}
 
-20. rest
+20. rest </br>
       _.rest(array, [index]) Aliases: tail, drop 
       Returns the rest of the elements in an array. Pass an index to return the values of the array from that index onward.
       
       _.rest([5, 4, 3, 2, 1]);
       => [4, 3, 2, 1]
 
-21. size
+21. size </br>
       _.size({one: 1, two: 2, three: 3});
       size_.size(list)  Return the number of values in the list.
       => 3
 
-22. isUndefined
+22. isUndefined </br>
       _.isUndefined(value) 
       Returns true if value is undefined.
       
       _.isUndefined(window.missingVariable);
       => true
 
-23. isArguments
+23. isArguments </br>
        _.isArguments(object) 
       Returns true if object is an Arguments object.
       
