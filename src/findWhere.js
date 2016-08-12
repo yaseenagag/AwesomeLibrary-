@@ -1,5 +1,0 @@
-const findWhere = () => {
-
-}
-
-export { findWhere }

@@ -1,5 +1,0 @@
-const delay = () => {
-
-}
-
-export { delay }

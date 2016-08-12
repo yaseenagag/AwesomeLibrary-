@@ -1,5 +1,0 @@
-const after = () => {
-
-}
-
-export { after }
