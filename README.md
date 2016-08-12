@@ -26,3 +26,13 @@ _List of specifications (specs) for the completed goal. These are declarative se
 <br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 [mit-license]: https://opensource.org/licenses/MIT
+
+## Stack
+
+- Mocha
+- Chai
+- Express.js
+- Node.js
+- Babel Watch
+- ES6
+
