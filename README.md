@@ -11,7 +11,7 @@ Install Should
 ```npm install should``
 
 Start Running Your Tests. Enjoy!
-npm run test
+```npm run test```
 
 ## Description
 
