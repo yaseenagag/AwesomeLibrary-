@@ -1,4 +1,18 @@
 # AwesomeLibrary-JavaScript Library 
+## Getting Started
+
+Install babel-register
+```npm install babel-register```
+
+Install ES2015
+```npm install babel-cli babel-preset-es2015``
+
+Install Should
+```npm install should``
+
+Start Running Your Tests. Enjoy!
+npm run test
+
 ## Description
 
 _Create a library of commonly used JavaScript/Jquery/Lodash/Underscore methods with Documentation and commenting using ES2015, publish the code as a package to NPM.
