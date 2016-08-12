@@ -1,4 +1,4 @@
-Functions:
+Functions based off of underscorejs.org:
 
 1. min 
       min_.min(list, [iteratee], [context]) 
@@ -147,3 +147,10 @@ Functions:
       _.size({one: 1, two: 2, three: 3});
       size_.size(list)  Return the number of values in the list.
       => 3
+
+22. isUndefined
+      _.isUndefined(value) 
+      Returns true if value is undefined.
+      
+      _.isUndefined(window.missingVariable);
+      => true
