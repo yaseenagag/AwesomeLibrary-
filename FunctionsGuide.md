@@ -180,5 +180,14 @@ Functions based off of underscorejs.org:
       _.initial([5, 4, 3, 2, 1]);
       => [5, 4, 3, 2] </br>
 
+26. object </br>
+      Parameters => (list, [values]) 
+      Converts arrays into objects. Pass either a single list of [key, value] pairs, or a list of keys, and a list of values. If duplicate keys exist, the last value wins. </br>
+      Example:
+      _.object(['moe', 'larry', 'curly'], [30, 40, 50]);
+      => {moe: 30, larry: 40, curly: 50}
+      </br>
+      _.object([['moe', 30], ['larry', 40], ['curly', 50]]);
+      => {moe: 30, larry: 40, curly: 50}
 
 
