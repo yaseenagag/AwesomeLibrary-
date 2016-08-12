@@ -2,31 +2,43 @@
 ## Getting Started
 
 Clone the file into your local 
+
 ```git clone git@github.com:yaseenagag/AwesomeLibrary-.git```
 
 Install mocha, chai, should
+
 ```npm install --save mocha chai chai-as-promised should``
 
 Install babel
-```npm install --save-dev babel-core
-```npm i --save-dev babel-cli```
+
+```npm install --save-dev babel-core```
+
+Install babel-cli 
+```npm install --save-dev babel-cli```
+  
+Install ES2015
 ```npm install --save babel-cli babel-preset-es2015```
+
+Install babel-register
 ```npm install --save babel-register```
+
+Install babel-watch
 ```npm install --save-dev babel-watch```
 
 Include the following script into your package.json file
+
 ```"scripts": {
     "build": "babel src -d dist",
     "build:watch": "npm run build -- --watch",
     "test": "mocha --recursive --watch --require babel-register "
   },```
 
-Run the tests
+In your terminal's command line you run babel watch 
 
+```npm run build:watch```
 
+In another tab on the command line, start running your tests. Enjoy!
 
-
-Start Running Your Tests. Enjoy!
 ```npm run test```
 
 ## Description
