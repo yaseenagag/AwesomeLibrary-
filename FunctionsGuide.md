@@ -190,4 +190,11 @@ Functions based off of underscorejs.org:
       _.object([['moe', 30], ['larry', 40], ['curly', 50]]);
       => {moe: 30, larry: 40, curly: 50}
 
+27. reject </br>
+      Parameters => (list, predicate, [context]) 
+      Returns the values in list without the elements that the truth test (predicate) passes. The opposite of filter. </br>
+      Example:
+      var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+      => [1, 3, 5]
+
 
