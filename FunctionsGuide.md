@@ -197,4 +197,10 @@ Functions based off of underscorejs.org:
       var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
       => [1, 3, 5]
 
+28.  has </br>
+      Parameters => ((object, key)) 
+      Does the object contain the given key? Identical to object.hasOwnProperty(key), but uses a safe reference to the hasOwnProperty function, in case it's been overridden accidentally. </br>
+      Example: 
+      _.has({a: 1, b: 2, c: 3}, "b");
+      => true
 
