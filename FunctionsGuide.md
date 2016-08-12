@@ -154,3 +154,13 @@ Functions based off of underscorejs.org:
       
       _.isUndefined(window.missingVariable);
       => true
+
+23. isArguments
+       _.isArguments(object) 
+      Returns true if object is an Arguments object.
+      
+      (function(){ return _.isArguments(arguments); })(1, 2, 3);
+      => true
+      _.isArguments([1,2,3]);
+      => false
+
