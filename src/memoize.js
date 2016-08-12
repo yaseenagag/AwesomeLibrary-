@@ -1,10 +1,15 @@
-const memoize = fn => {
+const memoize = (fn, hashFunction) => {
   const table = {}
+  const hash = hashFunction || ( array => array[ 0 ] )
 
-  return () => {
-    console.log( '---', arguments )
+  return ( ...inputs ) => {
+    const key = hash( inputs )
 
-    // fn( ...arguments )
+    if( table[ key ] === undefined ) {
+      table[ key ] = fn( ...inputs )
+    }
+
+    return table[ key ]
   }
 }
 
