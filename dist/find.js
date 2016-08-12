@@ -1,19 +1,20 @@
-'use strict';
+"use strict";
 
-var _mocha = require('mocha');
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var find = function find(list, predicate) {
+  var fn = predicate || function (a) {
+    return a;
+  };
 
-var _mocha2 = _interopRequireDefault(_mocha);
+  for (var index = 0; index < list.length; index++) {
+    if (predicate(list[index])) {
+      return list[index];
+    }
+  }
 
-var _chai = require('chai');
+  return undefined;
+};
 
-var _chai2 = _interopRequireDefault(_chai);
-
-var _expect = require('expect');
-
-var _expect2 = _interopRequireDefault(_expect);
-
-var _find = require('../src/find');
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-describe('find', function () {});
+exports.find = find;

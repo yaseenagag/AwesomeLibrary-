@@ -173,14 +173,8 @@ Functions based off of underscorejs.org:
       Example:
       _.isBoolean(null);
       => false </br> 
-25.  initial </br> 
-      Parameters => (array, [n]) 
-      Returns everything but the last entry of the array. Especially useful on the arguments object. Pass n to exclude the last n elements from the result.</br>
-      Example: 
-      _.initial([5, 4, 3, 2, 1]);
-      => [5, 4, 3, 2] </br>
 
-26. object </br>
+25. object </br>
       Parameters => (list, [values]) 
       Converts arrays into objects. Pass either a single list of [key, value] pairs, or a list of keys, and a list of values. If duplicate keys exist, the last value wins. </br>
       Example:
@@ -190,17 +184,32 @@ Functions based off of underscorejs.org:
       _.object([['moe', 30], ['larry', 40], ['curly', 50]]);
       => {moe: 30, larry: 40, curly: 50}
 
-27. reject </br>
+26. reject </br>
       Parameters => (list, predicate, [context]) 
       Returns the values in list without the elements that the truth test (predicate) passes. The opposite of filter. </br>
       Example:
       var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
       => [1, 3, 5]
 
-28.  has </br>
+27.  has </br>
       Parameters => ((object, key)) 
       Does the object contain the given key? Identical to object.hasOwnProperty(key), but uses a safe reference to the hasOwnProperty function, in case it's been overridden accidentally. </br>
       Example: 
       _.has({a: 1, b: 2, c: 3}, "b");
       => true
 
+28.   find </br>
+      Parameters => (list, predicate, [context]) Alias: detect 
+      Looks through each value in the list, returning the first one that passes a truth test (predicate), or undefined if no value passes the test. The function returns as soon as it finds an acceptable element, and doesn't traverse the entire list.</br>
+      Example:
+      var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+      => 2
+
+29.   findIndex </br>
+      Parameters => (array, predicate, [context]) 
+      Similar to _.indexOf, returns the first index where the predicate truth test passes; otherwise returns -1.</br>
+      Example:
+      _.findIndex([4, 6, 8, 12], isPrime);
+      => -1 // not found
+      _.findIndex([4, 6, 7, 12], isPrime);
+      => 2

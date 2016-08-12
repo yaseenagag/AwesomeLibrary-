@@ -1,9 +1,15 @@
-import mocha from 'mocha'
-import chai from 'chai'
-import expect from 'expect'
+const find = ( list, predicate ) => {
+  const fn = predicate || ( a => a )
 
-import { find } from '../src/find'
+  for( let index = 0; index < list.length; index++ ) {
+    if( predicate( list[ index ] ) ) {
+      return list[ index ]
+    }
+  }
 
-describe( 'find', () => {
+  return undefined
+}
 
-})
+
+
+export { find }
