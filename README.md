@@ -1,15 +1,15 @@
 # AwesomeLibrary-JavaScript Library 
 ## Getting Started
 
-Clone the file into your local 
+1. Clone the file into your local 
 
 ```git clone git@github.com:yaseenagag/AwesomeLibrary-.git```
 
-Install mocha, chai, should
+2. Install mocha, chai, should
 
 ```npm install --save mocha chai chai-as-promised should``
 
-Install babel
+3. Install babel
 
 ```npm install --save-dev babel-core```
 
