@@ -1,4 +1,4 @@
-const initial = (array, n=1) => {
+export default (array, n=1) => {
   if( !( array instanceof Array || typeof( array ) === 'string' ) ) {
     return []
   }
@@ -11,5 +11,3 @@ const initial = (array, n=1) => {
 
   return result
 }
-
-export { initial }

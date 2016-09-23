@@ -1,4 +1,4 @@
-const find = ( list, predicate ) => {
+export default ( list, predicate ) => {
   const fn = predicate || ( a => a )
 
   for( let index = 0; index < list.length; index++ ) {
@@ -9,7 +9,3 @@ const find = ( list, predicate ) => {
 
   return undefined
 }
-
-
-
-export { find }

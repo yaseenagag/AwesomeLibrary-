@@ -1,4 +1,3 @@
-const isUndefined = input => input  === undefined
+export default input => input  === undefined
 
 
-export { isUndefined }

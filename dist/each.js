@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var each = function each(collection, iteratee) {
+
+exports.default = function (collection, iteratee) {
   var fn = iteratee || function () {};
 
   for (var key in collection) {
@@ -12,8 +13,6 @@ var each = function each(collection, iteratee) {
 
   return collection;
 };
-
-exports.each = each;
 
 // AND
 // X Y A

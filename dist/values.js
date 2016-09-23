@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 
-var values = function values(object) {
+exports.default = function (object) {
   var values = [];
   if ((typeof object === 'undefined' ? 'undefined' : _typeof(object)) !== 'object') {
     return values;
@@ -16,5 +16,3 @@ var values = function values(object) {
   }
   return values;
 };
-
-exports.values = values;

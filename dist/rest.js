@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var rest = function rest(array) {
+
+exports.default = function (array) {
   var index = arguments.length <= 1 || arguments[1] === undefined ? 1 : arguments[1];
 
   if (typeof array === 'string') {
@@ -12,5 +13,3 @@ var rest = function rest(array) {
 
   return array.slice(index);
 };
-
-exports.rest = rest;

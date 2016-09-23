@@ -1,4 +1,4 @@
-const has = ( object, key ) => {
+export default ( object, key ) => {
 	if( key in object ) {
 		return true
 	}
@@ -6,5 +6,3 @@ const has = ( object, key ) => {
 	return false
 }
 
-
-export { has }

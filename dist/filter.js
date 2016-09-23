@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var filter = function filter(list, predicate) {
+
+exports.default = function (list, predicate) {
   var result = [];
   for (var index = 0; index < list.length; index++) {
     if (predicate(list[index])) {
@@ -12,5 +13,3 @@ var filter = function filter(list, predicate) {
   }
   return result;
 };
-
-exports.filter = filter;

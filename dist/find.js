@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var find = function find(list, predicate) {
+
+exports.default = function (list, predicate) {
   var fn = predicate || function (a) {
     return a;
   };
@@ -16,5 +17,3 @@ var find = function find(list, predicate) {
 
   return undefined;
 };
-
-exports.find = find;

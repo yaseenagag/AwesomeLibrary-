@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reject = function reject(list, predicate) {
+
+exports.default = function (list, predicate) {
   var result = [];
 
   for (var index = 0; index < list.length; index++) {
@@ -14,5 +15,3 @@ var reject = function reject(list, predicate) {
 
   return result;
 };
-
-exports.reject = reject;

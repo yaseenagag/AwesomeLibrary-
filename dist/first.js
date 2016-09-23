@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var first = function first(collection, iteratee) {
+
+exports.default = function (collection, iteratee) {
   for (var key in collection) {
     var firstVal = [];
     if (collection[key] > firstVal) {
@@ -12,5 +13,3 @@ var first = function first(collection, iteratee) {
     return firstVal;
   }
 };
-
-exports.first = first;

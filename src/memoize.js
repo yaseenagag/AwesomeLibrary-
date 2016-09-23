@@ -1,4 +1,4 @@
-const memoize = (fn, hashFunction) => {
+export default (fn, hashFunction) => {
   const table = {}
   const hash = hashFunction || ( array => array[ 0 ] )
 
@@ -13,4 +13,3 @@ const memoize = (fn, hashFunction) => {
   }
 }
 
-export { memoize }

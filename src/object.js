@@ -1,4 +1,4 @@
-const object = ( array, list  ) => {
+export default ( array, list  ) => {
 	let newObj = {};
 	for (let index = 0; index < array.length; index++)
 		newObj[array[index]] = list[index];
@@ -7,4 +7,3 @@ const object = ( array, list  ) => {
 	return newObj
 }
 
-export { object }

@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var memoize = function memoize(fn, hashFunction) {
+
+exports.default = function (fn, hashFunction) {
   var table = {};
   var hash = hashFunction || function (array) {
     return array[0];
@@ -23,5 +24,3 @@ var memoize = function memoize(fn, hashFunction) {
     return table[key];
   };
 };
-
-exports.memoize = memoize;

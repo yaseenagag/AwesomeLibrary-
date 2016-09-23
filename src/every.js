@@ -1,4 +1,4 @@
-const every = (list, predicate) => {
+export default (list, predicate) => {
   const target = list || []
 
   for( let index = 0; index < target.length; index++ ) {
@@ -10,4 +10,3 @@ const every = (list, predicate) => {
   return true
 }
 
-export { every }

@@ -1,4 +1,4 @@
-const isString = ( input ) => {
+export default ( input ) => {
   if ( typeof input == null ) return false
   if ( typeof input == 'undefined' ) return false
   if ( (input instanceof Array ) ) return false
@@ -6,4 +6,3 @@ const isString = ( input ) => {
   return false
 }
 
-export { isString }

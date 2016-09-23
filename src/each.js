@@ -1,4 +1,4 @@
-const each = ( collection, iteratee ) => {
+export default ( collection, iteratee ) => {
   const fn = iteratee || ( () => {} )
 
   for( let key in collection ) {
@@ -8,7 +8,6 @@ const each = ( collection, iteratee ) => {
   return collection
 }
 
-export { each }
 
 // AND
 // X Y A

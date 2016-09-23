@@ -3,8 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var some = function some(list, predicate) {
+
+exports.default = function (list, predicate) {
   list.some(predicate);
 };
-
-exports.some = some;

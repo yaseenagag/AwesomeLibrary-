@@ -1,4 +1,4 @@
-const first = ( collection, iteratee ) => {
+export default ( collection, iteratee ) => {
    for( let key in collection ) {
     let firstVal = [];
     if (collection[key] > firstVal) {
@@ -7,6 +7,3 @@ const first = ( collection, iteratee ) => {
 return firstVal
  }
 }
-
-
-export { first }

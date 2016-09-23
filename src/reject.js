@@ -1,4 +1,4 @@
-const reject = ( list, predicate ) => {
+export default ( list, predicate ) => {
   const result = []
 
   for( let index = 0; index < list.length; index++ ){
@@ -9,5 +9,3 @@ const reject = ( list, predicate ) => {
 
   return result
 }
-
-export { reject }

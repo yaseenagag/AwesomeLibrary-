@@ -1,4 +1,4 @@
-const map = ( collection, transform ) => {
+export default ( collection, transform ) => {
   if( collection === null ) {
     return []
   }
@@ -21,4 +21,3 @@ const map = ( collection, transform ) => {
   return result
 }
 
-export { map }

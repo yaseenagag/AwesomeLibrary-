@@ -3,9 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var size = function size(object) {
+
+exports.default = function (object) {
   var target = object || {};
   return Object.keys(target).length;
 };
-
-exports.size = size;

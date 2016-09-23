@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var findIndex = function findIndex(list, predicate) {
+
+exports.default = function (list, predicate) {
 
   for (var index = 0; index < list.length; index++) {
     if (predicate(list[index])) {
@@ -13,5 +14,3 @@ var findIndex = function findIndex(list, predicate) {
 
   return -1;
 };
-
-exports.findIndex = findIndex;

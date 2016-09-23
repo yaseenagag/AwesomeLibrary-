@@ -3,8 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var isNumber = function isNumber(input) {
+
+exports.default = function (input) {
   return typeof input === 'number';
 };
-
-exports.isNumber = isNumber;

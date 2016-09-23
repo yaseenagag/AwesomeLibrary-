@@ -1,10 +1,9 @@
-const isBoolean = ( input ) => {
+export default ( input ) => {
   if ( typeof input === "boolean" ) return true
   return false
 
 }
 
-export { isBoolean }
 
 
 

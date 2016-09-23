@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var every = function every(list, predicate) {
+
+exports.default = function (list, predicate) {
   var target = list || [];
 
   for (var index = 0; index < target.length; index++) {
@@ -14,5 +15,3 @@ var every = function every(list, predicate) {
 
   return true;
 };
-
-exports.every = every;

@@ -1,4 +1,4 @@
-const findIndex = ( list, predicate ) => {
+export default ( list, predicate ) => {
 
   for( let index = 0; index < list.length; index++ ) {
     if( predicate( list[ index ] ) ) {
@@ -9,4 +9,3 @@ const findIndex = ( list, predicate ) => {
   return -1
 }
 
-export { findIndex }

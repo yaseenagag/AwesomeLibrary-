@@ -1,4 +1,4 @@
-const rest = ( array, index=1 ) => {
+export default ( array, index=1 ) => {
   if( typeof( array ) === 'string' ) {
     return array.slice( index ).split('')
   }
@@ -6,4 +6,3 @@ const rest = ( array, index=1 ) => {
   return array.slice( index )
 }
 
-export { rest }

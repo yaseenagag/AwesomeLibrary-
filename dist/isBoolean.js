@@ -3,9 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var isBoolean = function isBoolean(input) {
+
+exports.default = function (input) {
   if (typeof input === "boolean") return true;
   return false;
 };
-
-exports.isBoolean = isBoolean;

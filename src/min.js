@@ -1,4 +1,4 @@
-const min = ( collection, iteratee ) => {
+export default ( collection, iteratee ) => {
   let minVal = collection[0];
    for( let key in collection ) {
     if (collection[key] < minVal) {
@@ -9,5 +9,3 @@ return minVal
 }
 
 
-
-export { min }

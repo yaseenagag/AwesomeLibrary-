@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var min = function min(collection, iteratee) {
+
+exports.default = function (collection, iteratee) {
   var minVal = collection[0];
   for (var key in collection) {
     if (collection[key] < minVal) {
@@ -12,5 +13,3 @@ var min = function min(collection, iteratee) {
     return minVal;
   }
 };
-
-exports.min = min;

@@ -1,4 +1,4 @@
-const omit = ( object, attribute ) => {
+export default ( object, attribute ) => {
   if( attribute === null || attribute === undefined ) {
     return {}
   } else if( object instanceof Array ) {
@@ -17,4 +17,3 @@ const omit = ( object, attribute ) => {
   return object
 }
 
-export { omit }

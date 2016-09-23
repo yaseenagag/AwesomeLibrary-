@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var initial = function initial(array) {
+
+exports.default = function (array) {
   var n = arguments.length <= 1 || arguments[1] === undefined ? 1 : arguments[1];
 
   if (!(array instanceof Array || typeof array === 'string')) {
@@ -18,5 +19,3 @@ var initial = function initial(array) {
 
   return result;
 };
-
-exports.initial = initial;

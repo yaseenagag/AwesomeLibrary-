@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var max = function max(collection, iteratee) {
+
+exports.default = function (collection, iteratee) {
   var maxVal = collection[0];
 
   for (var key in collection) {
@@ -14,5 +15,3 @@ var max = function max(collection, iteratee) {
 
   return maxVal;
 };
-
-exports.max = max;

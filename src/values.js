@@ -1,4 +1,4 @@
-const values = (object) => {
+export default (object) => {
   const values = []
   if ( typeof object !== 'object' ) {
     return values
@@ -10,4 +10,3 @@ const values = (object) => {
 }
 
 
-export { values }

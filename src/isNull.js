@@ -1,4 +1,2 @@
-const isNull = input => input  === null
+export default input => input  === null
 
-
-export { isNull }

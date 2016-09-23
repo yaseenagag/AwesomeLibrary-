@@ -3,8 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var isFunction = function isFunction(fn) {
+
+exports.default = function (fn) {
   return typeof fn === 'function';
 };
-
-exports.isFunction = isFunction;

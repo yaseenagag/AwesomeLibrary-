@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var map = function map(collection, transform) {
+
+exports.default = function (collection, transform) {
   if (collection === null) {
     return [];
   } else if (collection === 'string') {
@@ -21,5 +22,3 @@ var map = function map(collection, transform) {
 
   return result;
 };
-
-exports.map = map;

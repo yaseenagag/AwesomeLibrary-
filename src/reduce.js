@@ -1,4 +1,4 @@
-const reduce = (input, iteratee, memo) => {
+export default (input, iteratee, memo) => {
   if( ! input ) {
     return memo
   }
@@ -15,5 +15,3 @@ const reduce = (input, iteratee, memo) => {
 
   return result
 }
-
-export { reduce }

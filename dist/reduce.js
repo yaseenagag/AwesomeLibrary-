@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var reduce = function reduce(input, iteratee, memo) {
+
+exports.default = function (input, iteratee, memo) {
   if (!input) {
     return memo;
   }
@@ -20,5 +21,3 @@ var reduce = function reduce(input, iteratee, memo) {
 
   return result;
 };
-
-exports.reduce = reduce;
